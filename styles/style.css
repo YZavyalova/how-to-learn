@@ -28,7 +28,7 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
@@ -40,7 +40,7 @@
   font-size: 18px;
   line-height:25px;
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   left: 64px;
   bottom: 30px;
   z-index: 4;
@@ -50,6 +50,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+ border: 1px solid #2f80ed;
 }
 
 .header__main-illustration {
@@ -178,7 +182,7 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -187,6 +191,7 @@
   font-weight: bold;
   line-height: 1.15;
   padding-top: 100px;
+  text-align:center
 }
 
 .feynman__subtitle {
@@ -207,6 +212,10 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+}
+
+.feynman__link:hover {
+  border: 1px solid #2f80ed;
 }
 
 .kaufman {
@@ -237,6 +246,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .table_theme_dark {
@@ -279,6 +289,7 @@
   top: 0;
   right: -210px;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
 }
 
 .footer {
@@ -343,6 +354,10 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__column-link:hover {
+  color:  #2f80ed;
 }
 
 .footer__column_content_social {
